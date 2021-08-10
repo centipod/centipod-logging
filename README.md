@@ -1,37 +1,28 @@
 # centipod-logging
 
-Convenience wrapper for Logback logging
+This library contains a convenience wrapper for Logback named `LogUtil`.
 
-# Repositories
+To use, import the below repository and dependencies.
+
+## Repositories
 
 ```
 <repositories>
     <repository>
         <id>gitlab-maven</id>
-        <url>https://dev.centipod.io/api/v4/projects/29/packages/maven</url>
+        <url>https://dev.centipod.io/api/v4/groups/2/-/packages/maven</url>
     </repository>
 </repositories>
-
-<distributionManagement>
-    <repository>
-        <id>gitlab-maven</id>
-        <url>https://dev.centipod.io/api/v4/projects/29/packages/maven</url>
-    </repository>
-    <snapshotRepository>
-        <id>gitlab-maven</id>
-        <url>https://dev.centipod.io/api/v4/projects/29/packages/maven</url>
-    </snapshotRepository>
-</distributionManagement>
-
 ```
+
+## Dependencies
 
 ```
 <dependencies>
     <dependency>
         <groupId>io.centipod</groupId>
         <artifactId>centipod-logging</artifactId>
-        <version>1.0.0</version>
+        <version>1.2.3</version>
     </dependency>
 </dependencies>
-<
 ```

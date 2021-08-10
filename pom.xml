@@ -5,32 +5,35 @@
 	<groupId>io.centipod</groupId>
 	<artifactId>centipod-logging</artifactId>
 	<version>1.2.3</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 	<description>Wrapper for Logback</description>
-	
+
 	<properties>
 		<logback.version>${project.version}</logback.version>
 		<maven.compiler.release>8</maven.compiler.release>
+		<maven.compiler.version>3.8.1</maven.compiler.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<centipod.project.id>29</centipod.project.id>
 	</properties>
-	
+
 	<repositories>
 		<repository>
 			<id>gitlab-maven</id>
-			<url>https://dev.centipod.io/api/v4/projects/29/packages/maven</url>
+			<url>https://dev.centipod.io/api/v4/projects/${centipod.project.id}/packages/maven</url>
 		</repository>
 	</repositories>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>gitlab-maven</id>
-            <url>https://dev.centipod.io/api/v4/projects/29/packages/maven</url>
+			<url>https://dev.centipod.io/api/v4/projects/${centipod.project.id}/packages/maven</url>
 		</repository>
 		<snapshotRepository>
 			<id>gitlab-maven</id>
-            <url>https://dev.centipod.io/api/v4/projects/29/packages/maven</url>
+			<url>https://dev.centipod.io/api/v4/projects/${centipod.project.id}/packages/maven</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -43,4 +46,16 @@
 			<version>${logback.version}</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.version}</version>
+				<configuration>
+					<release>${maven.compiler.release}</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
