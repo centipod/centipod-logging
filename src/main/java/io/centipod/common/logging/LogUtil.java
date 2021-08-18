@@ -231,6 +231,23 @@ public class LogUtil {
     }
 
     /**
+     * Prints a log message to the relevant logger and appender if level is TRACE
+     * @param e Exception
+     * @param message Logging message
+     * @param args Substitution values
+     * @return Returns the exception to be thrown again or raised
+     */
+    public <E extends Throwable> E warn(E e, String message, Object...args) {
+
+        if (args.length > 0) {
+
+            message = String.format(message, args);
+        }
+        this.logger.warn(message, e);
+        return e;
+    }
+
+    /**
      * Prints a log message to the relevant logger and appender
      *
      * @param e Exception
