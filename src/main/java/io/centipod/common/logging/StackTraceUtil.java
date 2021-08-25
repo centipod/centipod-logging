@@ -34,4 +34,29 @@ public class StackTraceUtil {
         }
         return buffer.toString();
     }
+
+    public static List<String> asList(Throwable e) {
+
+        List<Throwable> causes = new ArrayList<>();
+        List<String> list = new ArrayList<>();
+        if ((e.getStackTrace() != null) && (e.getStackTrace().length > 0)) {
+
+            Throwable cause = e;
+            while ((cause != null) && !causes.contains(cause)) {
+
+                causes.add(cause); // To avoid recursion
+                list.add("Caused by: " + cause.getClass() + ": " + cause.getMessage());
+                for (StackTraceElement s : e.getStackTrace()) {
+
+                    list.add(s.getClassName() + " " + s.getMethodName() + " " + s.getFileName() + " " + s.getLineNumber());
+                }
+                cause = e.getCause();
+            }
+        } else {
+
+            list.add("No stack trace available.");
+        }
+        return list;
+    }
+
 }
