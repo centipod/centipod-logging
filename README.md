@@ -2,9 +2,7 @@
 
 This library contains a convenience wrapper for Logback named `LogUtil`.
 
-[![pipeline status](https://dev.centipod.io/centipod/centipod-logging/badges/master/pipeline.svg)](https://dev.centipod.io/centipod/centipod-logging/-/commits/master)
-
-[![coverage report](https://dev.centipod.io/centipod/centipod-logging/badges/master/coverage.svg)](https://dev.centipod.io/centipod/centipod-logging/-/commits/master)
+[![Maven Package](https://github.com/centipod/centipod-logging/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/centipod/centipod-logging/actions/workflows/maven-publish.yml)
 
 To use, import the below repository and dependencies.
 
