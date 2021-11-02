@@ -18,17 +18,6 @@
                 <junit-surefire.version>1.3.2</junit-surefire.version>
 	</properties>
 
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-                        <url>https://maven.pkg.github.com/centipod/centipod-logging</url>
-		</repository>
-		<snapshotRepository>
-			<id>github</id>
-                        <url>https://maven.pkg.github.com/centipod/centipod-logging</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 	<dependencies>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
