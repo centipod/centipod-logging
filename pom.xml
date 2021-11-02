@@ -22,11 +22,11 @@
 	<distributionManagement>
 		<repository>
 			<id>github</id>
-                        <url>https://maven.pkg.github.com/centipod/centipod-logging/packages</url>
+                        <url>https://maven.pkg.github.com/centipod/centipod-logging</url>
 		</repository>
 		<snapshotRepository>
 			<id>github</id>
-                        <url>https://maven.pkg.github.com/centipod/centipod-logging/packages</url>
+                        <url>https://maven.pkg.github.com/centipod/centipod-logging</url>
 		</snapshotRepository>
 	</distributionManagement>
 
