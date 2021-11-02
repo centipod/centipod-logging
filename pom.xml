@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.centipod</groupId>
 	<artifactId>centipod-logging</artifactId>
-	<version>1.2.6</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<description>Wrapper for Logback</description>
 
 	<properties>
-		<logback.version>${project.version}</logback.version>
+		<logback.version>1.2.6</logback.version>
 		<maven.compiler.release>8</maven.compiler.release>
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
