@@ -24,7 +24,7 @@ To use, import the below repository and dependencies.
     <dependency>
         <groupId>io.centipod</groupId>
         <artifactId>centipod-logging</artifactId>
-        <version>1.2.6</version>
+        <version>X.Y.Z</version>
     </dependency>
 </dependencies>
 ```
