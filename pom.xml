@@ -22,11 +22,11 @@
 	<distributionManagement>
 		<repository>
 			<id>github</id>
-                        <url>https://maven.pkg.github.com/centipod/packages</url>
+                        <url>https://maven.pkg.github.com/centipod/christianschuit/packages</url>
 		</repository>
 		<snapshotRepository>
 			<id>github</id>
-                        <url>https://maven.pkg.github.com/centipod/packages</url>
+                        <url>https://maven.pkg.github.com/centipod/christianschuit/packages</url>
 		</snapshotRepository>
 	</distributionManagement>
 
