@@ -19,11 +19,11 @@
     </properties>
     <distributionManagement>
         <repository>
-            <id>github-centipod-logging</id>
+            <id>github</id>
             <url>https://maven.pkg.github.com/centipod/centipod-logging</url>
         </repository>
         <snapshotRepository>
-            <id>github-centipod-logging</id>
+            <id>github</id>
             <url>https://maven.pkg.github.com/centipod/centipod-logging</url>
         </snapshotRepository>
     </distributionManagement>
